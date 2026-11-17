@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.12.12405.243 stable
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoApplyJobs.Api", "AutoApplyJobs.Api\AutoApplyJobs.Api.csproj", "{6DB96E91-D226-41E3-AF4F-048DF67DAA8F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6DB96E91-D226-41E3-AF4F-048DF67DAA8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DB96E91-D226-41E3-AF4F-048DF67DAA8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DB96E91-D226-41E3-AF4F-048DF67DAA8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DB96E91-D226-41E3-AF4F-048DF67DAA8F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB2705FC-5769-4A90-8792-DF0FFF0CF455}
+	EndGlobalSection
+EndGlobal
