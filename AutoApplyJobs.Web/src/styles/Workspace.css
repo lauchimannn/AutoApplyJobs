@@ -1,0 +1,345 @@
+
+.workspace-page {
+    padding: 30px 36px 50px;
+    color: var(--text-primary);
+}
+
+.workspace-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.workspace-eyebrow {
+    color: var(--green);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.workspace-header h1 {
+    margin: 8px 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.workspace-header p,
+.search-panel-heading p,
+.results-toolbar p {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 13px;
+}
+
+.workspace-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 13px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text-secondary);
+    font-size: 12px;
+}
+
+.status-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--green);
+}
+
+.job-search-panel {
+    padding: 22px;
+    margin-bottom: 22px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.search-panel-heading {
+    margin-bottom: 20px;
+}
+
+    .search-panel-heading h2,
+    .results-toolbar h2 {
+        margin: 0 0 6px;
+        font-size: 17px;
+    }
+
+.job-search-fields {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr auto;
+    align-items: end;
+    gap: 14px;
+}
+
+.search-field,
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+    .search-field > label,
+    .filter-group > label {
+        color: var(--text-muted);
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+.search-input-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 43px;
+    padding: 0 12px;
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 7px;
+}
+
+    .search-input-wrap > span {
+        color: var(--green);
+        font-size: 19px;
+    }
+
+    .search-input-wrap input {
+        width: 100%;
+        color: var(--text-primary);
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 13px;
+    }
+
+        .search-input-wrap input::placeholder {
+            color: var(--text-muted);
+        }
+
+.job-search-button {
+    height: 43px;
+    padding: 0 24px;
+    color: #07160e;
+    background: var(--green);
+    border: 1px solid var(--green);
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+    .job-search-button:hover {
+        background: #65e69f;
+    }
+
+.workspace-content {
+    display: grid;
+    grid-template-columns: 245px minmax(0, 1fr);
+    align-items: start;
+    gap: 22px;
+}
+
+.job-filters {
+    padding: 20px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.filter-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+    .filter-heading h3 {
+        margin: 0;
+        font-size: 15px;
+    }
+
+    .filter-heading button {
+        padding: 0;
+        color: var(--green);
+        background: none;
+        border: none;
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+.filter-group {
+    margin-bottom: 21px;
+}
+
+    .filter-group:last-child {
+        margin-bottom: 0;
+    }
+
+    .filter-group select,
+    .filter-group > input,
+    .results-toolbar select {
+        width: 100%;
+        height: 39px;
+        padding: 0 10px;
+        color: var(--text-primary);
+        background: var(--background);
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        outline: none;
+        font-size: 12px;
+    }
+
+        .filter-group select:focus,
+        .filter-group > input:focus,
+        .results-toolbar select:focus {
+            border-color: var(--green);
+        }
+
+.source-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.source-option {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: var(--text-secondary);
+    font-size: 12px;
+    cursor: pointer;
+}
+
+    .source-option input {
+        width: 14px;
+        height: 14px;
+        accent-color: var(--green);
+        cursor: pointer;
+    }
+
+.job-results {
+    min-width: 0;
+}
+
+.results-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 16px;
+}
+
+    .results-toolbar select {
+        width: 180px;
+    }
+
+.job-empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 370px;
+    padding: 35px;
+    text-align: center;
+    background: var(--panel);
+    border: 1px dashed var(--border);
+    border-radius: 12px;
+}
+
+.empty-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    margin-bottom: 18px;
+    color: var(--green);
+    background: rgba(76, 217, 140, 0.09);
+    border-radius: 14px;
+    font-size: 30px;
+}
+
+.job-empty-state h3 {
+    margin: 0 0 9px;
+    font-size: 16px;
+}
+
+.job-empty-state p {
+    max-width: 420px;
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.empty-source-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+    .empty-source-list span {
+        padding: 6px 10px;
+        color: var(--text-secondary);
+        background: var(--background);
+        border: 1px solid var(--border);
+        border-radius: 5px;
+        font-size: 10px;
+    }
+
+@media (max-width: 900px) {
+    .workspace-content {
+        grid-template-columns: 210px minmax(0, 1fr);
+    }
+
+    .job-search-fields {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .job-search-button {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 650px) {
+    .workspace-page {
+        padding: 22px 16px;
+    }
+
+    .workspace-header {
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .workspace-status {
+        font-size: 10px;
+        white-space: nowrap;
+    }
+
+    .workspace-content {
+        grid-template-columns: 1fr;
+    }
+
+    .job-search-fields {
+        grid-template-columns: 1fr;
+    }
+
+    .job-search-button {
+        grid-column: auto;
+    }
+
+    .results-toolbar {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+        .results-toolbar select {
+            width: 100%;
+        }
+}
